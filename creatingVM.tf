@@ -1,13 +1,10 @@
 resource "google_compute_instance" "myvm" {
-        name = "terraformcreation-modifying"
+        name = "terraformcreation"
         zone = "us-east1-b"
         machine_type = "e2-medium"
         boot_disk {
             initialize_params {
                 image = "ubuntu-os-cloud/ubuntu-2004-lts"
-                labels = {
-                my_label = "value"
-                }
             }
         }
 
