@@ -1,5 +1,5 @@
 resource "google_compute_instance" "myvm" {
-        name = "terraformcreation"
+        name = "terraformcreation-modifying"
         zone = "us-east1-b"
         machine_type = "e2-medium"
         boot_disk {
